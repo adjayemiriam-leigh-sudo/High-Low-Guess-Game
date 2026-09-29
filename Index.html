@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <title>Roll Dice Game</title>
+</head>
+
+<body class="bg-sky-900 min-h-screen flex flex-col items-center justify-center gap-4 text-white font-mono">
+  <h1 class="text-xl font-semibold text-fuchsia-300">Welcome To The Dice Game</h1>
+
+  <input type="text" placeholder="Enter Your Prediction" id="predictInput"
+    class="px-4 py-2 rounded-lg text-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-fuchsia-400 text-center">
+
+  <button id="predictBtn"
+    class="px-6 py-2 rounded-full bg-purple-700 hover:bg-blue-600 transition-colors font-semibold">
+    Predict
+  </button>
+
+  <p id="predictResults" class="text-lg">Results: </p>
+
+  <script src="index.js"></script>
+</body>
