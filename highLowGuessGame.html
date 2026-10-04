@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Higher or Lower</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen flex justify-center items-center font-sans bg-gradient-to-br from-red-200 to-yellow-300">
+
+    <div id="game" class="bg-white px-12 py-10 rounded-3xl text-center shadow-2xl animate-slide-in">
+
+        <h2 class="text-sm uppercase tracking-widest text-yellow-600">Higher or Lower Game</h2>
+
+        <h1 id="result" class="text-3xl font-bold text-gray-700 mt-4 mb-1 min-h-[40px]">Guess the number</h1>
+
+        <p class="text-sm text-gray-400 mb-2">I'm thinking of a number between 0 and 9</p>
+
+        <p class="text-sm text-gray-500 mb-6">Guesses: <span id="attempts"
+                class="inline-block font-bold text-yellow-500">0</span></p>
+
+        <input name="number" id="numberInput" type="number" placeholder="?" class="w-24 p-3 text-2xl text-center border-2 border-gray-200 rounded-xl outline-none
+                   transition duration-300 focus:border-yellow-400 focus:scale-110">
+        <br />
+        <br />
+        <button onclick="compareNumber()" class="px-10 py-3 text-lg text-white bg-yellow-500 rounded-xl cursor-pointer
+                   transition duration-200 hover:bg-yellow-600 hover:-translate-y-1 active:scale-95">
+            Guess
+        </button>
+    </div>
+
+    <script type="text/javascript" src="highLowGuessGame.js"></script>
+</body>
+
+</html>
